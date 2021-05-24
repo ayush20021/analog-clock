@@ -1,0 +1,109 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body
+{
+background-color:rgb(87, 228, 241);
+
+}
+.container
+{
+    width: 400px;
+    height: 400px;
+    /* boder: 2px solid black:*/
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+border-radius: 50%;
+box-shadow: 15px 15px 30px   #2d4042    ,
+           -15px -15px 30px   #75f5eece   ;
+}
+.clock
+{
+    width: 325px;
+    height: 325px;
+      /* boder: 2px solid black:*/
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    background: url(kisspng-clock-face-roman-numerals-wall-decal-clip-art-simple-watch-5aad730c15ee03.4909312415213166200898.png);
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow:inset 15px 15px 30px    #2d4042   ,
+            inset -15px -15px 30px    #3df5e6ce   ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hr
+{
+
+    width: 150px;
+    height:150px ;
+}
+.min{
+
+    width: 200px;
+    height:200px ;
+}
+.sec{
+    width: 250px;
+    height:250px ;
+}
+.hr , .min, .sec
+{
+     /*border: 1px solid black;*/
+position: absolute;
+display:flex ;
+justify-content:center;
+}
+.clock::before
+{
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.hr::before
+{
+position:absolute;
+content: "";
+width: 8px;
+height: 75px;
+background-color: black;
+z-index:10;
+border-radius: 50%;
+}
+.min::before
+{
+position:absolute;
+content: "";
+width: 3.5px;
+height: 100.1px;
+background-color: black;
+z-index:11;
+border-radius: 50%;
+}
+.sec::before
+{
+position:absolute;
+content: "";
+width: 2px;
+height: 150px;
+background-color: black;
+z-index:12;
+border-radius: 50%;
+}
+
+
+
+
+
+
